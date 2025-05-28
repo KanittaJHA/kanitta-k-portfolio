@@ -1,8 +1,16 @@
 import React from "react";
 import { RiArrowRightDoubleLine } from "react-icons/ri";
-import ProjectImage from "../../assets/images/project.jpg";
+import ProjectImage from "../../../assets/images/project.jpg";
+import { useNavigate } from "react-router-dom";
 
 const MyProjects = () => {
+  const navigate = useNavigate();
+
+  const handleProjectClick = (category) => {
+    const encodedCategory = encodeURIComponent(category);
+    navigate(`/projects?category=${encodedCategory}`);
+  };
+
   return (
     <section className="mt-[62px] mb-[30px] w-full max-w-[1440px] px-[64px] mx-auto grid grid-cols-2 gap-8 max-[601px]:grid-cols-1 max-[701px]:px-[32px]">
       <img
@@ -15,13 +23,16 @@ const MyProjects = () => {
         {[
           "E-commerce Websites",
           "Business Websites",
-          "Information Websites",
+          "Mini Projects",
           "Dashboards",
           "Animations and Games",
           "Full Stack Projects",
         ].map((project, index) => (
           <React.Fragment key={index}>
-            <div className="text-gray-600 flex justify-center w-full h-[75px] max-[821px]:h-[57px] uppercase cursor-pointer hover:text-[#FF9EAD] ease-in-out transition-all duration-400">
+            <div
+              className="text-gray-600 flex justify-center w-full h-[75px] max-[821px]:h-[57px] uppercase cursor-pointer hover:text-[#FF9EAD] ease-in-out transition-all duration-400"
+              onClick={() => handleProjectClick(project)}
+            >
               <div className="ml-2 max-[821px]:text-[14px]">
                 <p>{String(index + 1).padStart(2, "0")}.</p>
               </div>

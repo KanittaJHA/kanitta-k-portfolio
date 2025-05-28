@@ -1,5 +1,6 @@
 import React from "react";
 import FooterImage from "../../assets/images/SPACEJI-home-logo.png";
+import { Link } from "react-router-dom";
 import TypewriterText from "../TypewriterText";
 import styles from "./Footer.module.css";
 import {
@@ -28,11 +29,20 @@ const iconStyle =
   "cursor-pointer hover:text-[#FF9EAD] hover:scale-110 transition-all duration-300 ease-in-out";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
+
   return (
     <footer className="relative z-20 w-full h-[410px] max-[621px]:h-[450px] max-w-[1440px] mx-auto px-[64px] flex flex-col max-[701px]:px-[32px]">
       <div className="grid grid-cols-2 max-[621px]:grid-cols-1">
         <div className="flex flex-col gap-8 w-full">
-          <img className="w-[130px]" src={FooterImage} alt="Footer Logo" />
+          <Link to="/" onClick={scrollToTop}>
+            <img className="w-[130px]" src={FooterImage} alt="Footer Logo" />
+          </Link>
+
           <p className="text-[#F5DCE0] font-extralight uppercase w-[85%] max-[901px]:w-[100%] max-[769px]:text-[14px]">
             Thank you so much for visiting my website. I truly appreciate you
             taking the time to explore my journey, my work, and the passion

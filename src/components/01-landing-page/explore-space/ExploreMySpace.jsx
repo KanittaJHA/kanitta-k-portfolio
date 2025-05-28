@@ -1,10 +1,18 @@
 import React from "react";
-import ExploreHeaderImage from "../../assets/images/explore-header.png";
-import ExploreImage from "../../assets/images/explore.jpg";
-import TypewriterText from "../TypewriterText";
+import { Link } from "react-router-dom";
+import ExploreHeaderImage from "../../../assets/images/explore-header.png";
+import ExploreImage from "../../../assets/images/explore.jpg";
+import TypewriterText from "../../TypewriterText";
 import styles from "./ExploreMySpace.module.css";
 
 const ExploreMySpace = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <section className="relative w-full h-[853px] max-[991px]:h-[814px] max-[901px]:h-[712px] max-[801px]:h-[662px] max-[782px]:h-[670px] max-[781px]:h-[660px] max-[721px]:h-[595px] max-[681px]:h-[614px] max-[601px]:h-[605px] max-[373px]:h-[600px] max-[536px]:h-[620px] max-[472px]:h-[600px] max-[372px]:h-[620px] max-[308px]:h-[636px] my-[62px] max-w-[1440px] mx-auto px-[64px] max-[701px]:px-[32px]">
       <img
@@ -41,12 +49,13 @@ const ExploreMySpace = () => {
             discover the inspiration, intention, and journey behind my path as a
             software developer, let’s get to know each other more on this page
           </p>
-
-          <button
-            className={`uppercase w-[250px] max-[721px]:w-[200px] max-[421px]:w-[160px] py-2 text-[20px] max-[681px]:text-[16px] mt-10 max-[721px]:mt-8 max-[681px]:mt-6 text-white rounded-full hover:rounded-xl transition-all duration-500 cursor-pointer  ${styles.gradientMove}`}
-          >
-            discover MORE
-          </button>
+          <Link to="/about-me" onClick={scrollToTop}>
+            <button
+              className={`uppercase w-[250px] max-[721px]:w-[200px] max-[421px]:w-[160px] py-2 text-[20px] max-[681px]:text-[16px] mt-10 max-[721px]:mt-8 max-[681px]:mt-6 text-white rounded-full hover:rounded-xl transition-all duration-500 cursor-pointer ${styles.gradientMove}`}
+            >
+              discover MORE
+            </button>
+          </Link>
         </div>
 
         <div className="w-full  flex flex-col max-[681px]:hidden">

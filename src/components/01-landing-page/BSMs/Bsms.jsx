@@ -58,7 +58,7 @@ const items = [
 
 const Bsms = () => {
   return (
-    <section className="relative z-20 w-full h-[100px] max-w-[1440px] mx-auto px-[64px] mb-[62px] flex flex-col justify-center max-[701px]:px-[32px]">
+    <section className="relative z-20 w-full h-[100px] max-w-[1440px] mx-auto px-[64px] mb-[64px] flex flex-col justify-center max-[701px]:px-[32px]">
       <div className="w-full overflow-hidden">
         <Swiper className="w-[2250px]" slidesPerView={7} loop={true}>
           {items.map((item, index) => (
