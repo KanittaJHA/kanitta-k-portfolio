@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BackgroundImage from "../assets/images/bg.png";
 import ProjectsComponent from "../components/03-projects/ProjectsComponent";
 import Footer from "../components/footer/Footer";
 
 const Projects = () => {
+  useEffect(() => {
+    document.title = "SPACEJI | PROJECTS";
+  }, []);
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       <img

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/01-landing-page/header/Header";
 import ExploreMySpace from "../components/01-landing-page/explore-space/ExploreMySpace";
 import MyProjects from "../components/01-landing-page/my-projects/MyProjects";
@@ -9,6 +9,10 @@ import Bsms from "../components/01-landing-page/BSMs/Bsms";
 import Footer from "../components/footer/Footer";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "SPACEJI | HOME";
+  }, []);
+
   return (
     <div className="relative min-h-screen overflow-hidden">
       <div className="relative w-full h-auto">
