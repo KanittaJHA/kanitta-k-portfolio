@@ -67,6 +67,8 @@ const ProjectsComponent = () => {
   const headingText =
     activeCategory === "All Projects"
       ? "Launch into my space of projects"
+      : activeCategory === "Mini Projects"
+      ? "Launch into my Mini Projects"
       : `Launch into my ${activeCategory} projects`;
 
   return (
@@ -74,7 +76,7 @@ const ProjectsComponent = () => {
       <NavbarV2 />
 
       <div className="flex flex-col w-full justify-center items-center">
-        <h2 className="text-[#F5DCE0] text-6xl uppercase mt-[140px] text-center max-[769px]:text-5xl max-[401px]:text-[38px]">
+        <h2 className="text-[#FF9EAD] text-6xl uppercase mt-[140px] text-center max-[769px]:text-5xl max-[401px]:text-[38px]">
           {headingText}
         </h2>
         <p className="text-[#F5DCE0] text-[20px] uppercase font-light w-[50%] text-center max-[1025px]:w-[70%] max-[769px]:w-[80%] max-[601px]:w-[100%] max-[769px]:text-[16px] max-[401px]:text-[14px]">
