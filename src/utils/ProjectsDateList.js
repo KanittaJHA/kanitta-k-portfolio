@@ -9,7 +9,7 @@ const ProjectsDateList = [
     image:
       "https://res.cloudinary.com/dvhhq4hhh/image/upload/v1748357491/calnoy_hxyaof.png",
     icons: [
-      "https://img.icons8.com/?size=100&id=8rKdRqZFLurS&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
       "https://www.manektech.com/storage/developer/1646733543.webp",
       "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000",
       "https://cdn-icons-png.flaticon.com/256/5968/5968322.png",
@@ -299,7 +299,7 @@ const ProjectsDateList = [
     image:
       "https://res.cloudinary.com/dvhhq4hhh/image/upload/v1748357491/calnoy_hxyaof.png",
     icons: [
-      "https://img.icons8.com/?size=100&id=8rKdRqZFLurS&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
       "https://www.manektech.com/storage/developer/1646733543.webp",
       "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000",
       "https://cdn-icons-png.flaticon.com/256/5968/5968322.png",

@@ -32,7 +32,7 @@ const AboutMeComponent = () => {
               alt=""
               className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] 
                transition-transform duration-300 ease-out group-hover:scale-[1.85] md:group-hover:scale-[3.1] lg:group-hover:scale-[2.6] 
-               transition-filter duration-300 ease-out filter grayscale group-hover:filter-none"
+               transition-filter filter grayscale group-hover:filter-none"
             />
             <div className="z-10">
               <p className="uppercase text-primary text-2xl mb-2">
@@ -132,7 +132,7 @@ const AboutMeComponent = () => {
               />
               <Card
                 style={{ rotate: "20deg", top: "15%", left: "65%" }}
-                image="https://img.icons8.com/?size=100&id=8rKdRqZFLurS&format=png&color=000000"
+                image="https://img.icons8.com/?size=100&id=74402&format=png&color=000000"
                 containerRef={grid2Container}
               />
               <Card

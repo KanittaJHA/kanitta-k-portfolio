@@ -159,7 +159,7 @@ const ProjectsComponent = () => {
                 {project.icons.map((icon, iconIndex) => (
                   <img
                     key={iconIndex}
-                    className="w-[17px] h-[17px]"
+                    className="w-[20px] h-[20px]"
                     src={icon}
                     alt=""
                   />
