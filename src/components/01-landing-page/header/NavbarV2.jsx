@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../assets/images/SPACEJI-home-logo.png";
 import TypewriterText from "../../TypewriterText";
-import { RiMenu2Line, RiCloseFill } from "react-icons/ri";
+import { RiCloseFill, RiApps2Fill } from "react-icons/ri";
 import styles from "./Header.module.css";
 
 const menuLinks = [
-  { text: "Projects.", path: "/projects", type: "route" }, // Projects is now part of menuLinks
+  { text: "Projects.", path: "/projects", type: "route" },
   { text: "Home.", path: "/", type: "route" },
   { text: "About Me.", path: "/about-me", type: "route" },
   { text: "Contact Us.", path: "#contact", type: "scroll" },
@@ -61,7 +61,6 @@ const Navbar = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   };
 
@@ -82,7 +81,12 @@ const Navbar = () => {
       >
         <div className="max-w-[1440px] mx-auto flex items-center justify-between px-[64px] py-7 max-[701px]:px-[32px] max-[701px]:py-5">
           <div className="flex items-center">
-            <Link to="/">
+            <Link
+              to="/"
+              onClick={() => {
+                scrollToTop();
+              }}
+            >
               <img src={logo} alt="SPACEJI logo" className="w-[100px]" />
             </Link>
           </div>
@@ -175,7 +179,7 @@ const Navbar = () => {
                 isAnimating ? "rotate-180" : ""
               }`}
             >
-              <RiMenu2Line className="text-[24px] cursor-pointer" />
+              <RiApps2Fill className="text-[24px] cursor-pointer" />
             </button>
           </div>
         </div>
@@ -188,7 +192,7 @@ const Navbar = () => {
       >
         <button
           onClick={handleMenuToggle}
-          className={`absolute top-4 right-8 text-[#FF9EAD] text-[28px] transition-transform duration-300 ease-in-out ${
+          className={`absolute top-4 left-8 text-[#FF9EAD] text-[28px] transition-transform duration-300 ease-in-out ${
             isAnimating ? "rotate-180" : ""
           }`}
         >
@@ -213,86 +217,88 @@ const Navbar = () => {
         </div>
 
         <ul className="flex flex-col items-center gap-4">
-          {menuLinks.map((item) => {
-            const isRouteActive =
-              item.type === "route" && location.pathname === item.path;
-            const isScrollActive =
-              item.type === "scroll" && activeScrollLink === item.path;
-            const isActive = isRouteActive || isScrollActive;
+          {menuLinks
+            .filter((item) => item.path !== "/projects")
+            .map((item) => {
+              const isRouteActive =
+                item.type === "route" && location.pathname === item.path;
+              const isScrollActive =
+                item.type === "scroll" && activeScrollLink === item.path;
+              const isActive = isRouteActive || isScrollActive;
 
-            return (
-              <li
-                key={item.text}
-                className="group text-xl cursor-pointer relative"
-              >
-                {item.type === "route" ? (
-                  <Link
-                    to={item.path}
-                    onClick={() => {
-                      scrollToTop();
-                      setActiveScrollLink(null);
-                      handleMenuToggle();
-                    }}
-                    className="flex items-center"
-                  >
-                    <span
-                      className={`absolute left-[-20px] text-[#FF9EAD] transition-opacity duration-300
-                        ${
-                          isActive
-                            ? "opacity-100"
-                            : "opacity-0 group-hover:opacity-100"
-                        }
-                      `}
+              return (
+                <li
+                  key={item.text}
+                  className="group text-xl cursor-pointer relative"
+                >
+                  {item.type === "route" ? (
+                    <Link
+                      to={item.path}
+                      onClick={() => {
+                        scrollToTop();
+                        setActiveScrollLink(null);
+                        handleMenuToggle();
+                      }}
+                      className="flex items-center"
                     >
-                      /
-                    </span>
+                      <span
+                        className={`absolute left-[-20px] text-[#FF9EAD] transition-opacity duration-300
+                          ${
+                            isActive
+                              ? "opacity-100"
+                              : "opacity-0 group-hover:opacity-100"
+                          }
+                        `}
+                      >
+                        /
+                      </span>
+                      <span
+                        className={`uppercase transition-all duration-300
+                          ${
+                            isActive
+                              ? "pl-4 text-[#FF9EAD]"
+                              : "group-hover:pl-4 text-gray-500 group-hover:text-[#FF9EAD]"
+                          }
+                        `}
+                      >
+                        {item.text}
+                      </span>
+                    </Link>
+                  ) : (
                     <span
-                      className={`uppercase transition-all duration-300
-                        ${
-                          isActive
-                            ? "pl-4 text-[#FF9EAD]"
-                            : "group-hover:pl-4 text-gray-500 group-hover:text-[#FF9EAD]"
-                        }
-                      `}
+                      onClick={() => {
+                        scrollToBottom();
+                        handleMenuToggle();
+                      }}
+                      className="flex items-center"
                     >
-                      {item.text}
+                      <span
+                        className={`absolute left-[-20px] text-[#FF9EAD] opacity-0 transition-opacity duration-300
+                          ${
+                            isActive
+                              ? "opacity-100"
+                              : "opacity-0 group-hover:opacity-100"
+                          }
+                        `}
+                      >
+                        /
+                      </span>
+                      <span
+                        className={`uppercase transition-all duration-300
+                          ${
+                            isActive
+                              ? "pl-4 text-[#FF9EAD]"
+                              : "group-hover:pl-4 text-gray-500 group-hover:text-[#FF9EAD]"
+                          }
+                        `}
+                      >
+                        {item.text}
+                      </span>
                     </span>
-                  </Link>
-                ) : (
-                  <span
-                    onClick={() => {
-                      scrollToBottom();
-                      handleMenuToggle();
-                    }}
-                    className="flex items-center"
-                  >
-                    <span
-                      className={`absolute left-[-20px] text-[#FF9EAD] opacity-0 transition-opacity duration-300
-                        ${
-                          isActive
-                            ? "opacity-100"
-                            : "opacity-0 group-hover:opacity-100"
-                        }
-                      `}
-                    >
-                      /
-                    </span>
-                    <span
-                      className={`uppercase transition-all duration-300
-                        ${
-                          isActive
-                            ? "pl-4 text-[#FF9EAD]"
-                            : "group-hover:pl-4 text-gray-500 group-hover:text-[#FF9EAD]"
-                        }
-                      `}
-                    >
-                      {item.text}
-                    </span>
-                  </span>
-                )}
-              </li>
-            );
-          })}
+                  )}
+                </li>
+              );
+            })}
         </ul>
 
         <div className="absolute w-[320px] h-[320px] right-[-100px] bottom-[-100px] flex items-center justify-center bg-black/60 shadow-[1px_1px_50px_0_rgba(207,244,255,0.25)] rounded-full">

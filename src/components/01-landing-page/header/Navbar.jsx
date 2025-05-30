@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../../assets/images/SPACEJI-home-logo.png";
 import TypewriterText from "../../TypewriterText";
-import { RiMenu2Line, RiCloseFill } from "react-icons/ri";
+import { RiCloseFill, RiApps2Fill } from "react-icons/ri";
 import styles from "./Header.module.css";
 
 const menuLinks = [
@@ -206,7 +206,7 @@ const Navbar = () => {
               isAnimating ? "rotate-180" : ""
             }`}
           >
-            <RiMenu2Line className="text-[24px] cursor-pointer" />
+            <RiApps2Fill className="text-[24px] cursor-pointer" />
           </button>
         </div>
       </nav>
@@ -219,7 +219,7 @@ const Navbar = () => {
       >
         <button
           onClick={handleMenuToggle}
-          className={`absolute top-4 right-8 text-[#FF9EAD] text-[28px] transition-transform duration-300 ease-in-out ${
+          className={`absolute top-4 left-8 text-[#FF9EAD] text-[28px] transition-transform duration-300 ease-in-out ${
             isAnimating ? "rotate-180" : ""
           }`}
         >

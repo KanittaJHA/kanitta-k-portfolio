@@ -10,7 +10,7 @@ import Footer from "../components/footer/Footer";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "SPACEJI | HOME";
+    document.title = "SpaceJi | Home";
   }, []);
 
   return (

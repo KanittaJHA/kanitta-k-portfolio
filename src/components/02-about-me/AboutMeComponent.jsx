@@ -4,6 +4,8 @@ import CodingPovImage from "../../assets/images/coding-pov.png";
 import TypewriterText from "../TypewriterText";
 import Card from "./Card";
 import { Globe } from "./Globe";
+import CopyCvButton from "./CopyCvButton";
+import { FrameWorks } from "./FrameWorks";
 
 const AboutMeComponent = () => {
   const grid2Container = useRef();
@@ -14,28 +16,30 @@ const AboutMeComponent = () => {
 
       <div className="min-h-screen mt-20 md:mt-30">
         <div className="w-full text-center">
-          <h2 className="text-[#FF9EAD] text-6xl uppercase mt-[140px]">
+          <h2 className="text-primary text-6xl uppercase mt-[140px]">
             About Me
           </h2>
 
-          <span className="text-[#F5DCE0] text-[2.5rem] max-[901px]:text-[1.8rem] max-[801px]:text-[1.6rem] max-[721px]:text-[1.3rem] uppercase">
+          <span className="text-secondary text-[2.5rem] max-[901px]:text-[1.8rem] max-[801px]:text-[1.6rem] max-[721px]:text-[1.3rem] uppercase">
             [
             <TypewriterText text=" Hi, I'm Kanitta Ket-in ]" speed={200} />
           </span>
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
           {/* Grid 1 */}
-          <div className="flex items-end p-6 bg-gradient-to-b from-black to-neutral-800 rounded-2xl row-span-2 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
+          <div className="flex items-end p-6 bg-gradient-to-b from-black to-neutral-800 rounded-2xl row-span-2 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden cursor-pointer group transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <img
               src={CodingPovImage}
               alt=""
-              className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] filter grayscale"
+              className="absolute scale-[1.75] -right-[5rem] -top-[1rem] md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] 
+               transition-transform duration-300 ease-out group-hover:scale-[1.85] md:group-hover:scale-[3.1] lg:group-hover:scale-[2.6] 
+               transition-filter duration-300 ease-out filter grayscale group-hover:filter-none"
             />
             <div className="z-10">
-              <p className="uppercase text-[#FF9EAD] text-2xl mb-2">
+              <p className="uppercase text-primary text-2xl mb-2">
                 Hi, I'm Kanitta Ket-in
               </p>
-              <p className="leading-[18px] text-neutral-600 font-extralight uppercase">
+              <p className="leading-[18px] text-neutral-600 font-extralight uppercase max-[426px]:text-sm">
                 I'm an aspiring software developer driven by a big dream and a
                 deep belief in tech's power to create meaningful, human-centered
                 change. I build digital solutions that solve real problems and
@@ -45,7 +49,7 @@ const AboutMeComponent = () => {
             <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-black"></div>
           </div>
           {/* Grid 2 */}
-          <div className="flex items-end p-6 bg-gradient-to-tr  from-neutral-800 to-black rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
+          <div className="flex items-end p-6 bg-gradient-to-tr from-neutral-800 to-black rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div
               ref={grid2Container}
               className="flex items-center justify-center w-full h-full"
@@ -140,10 +144,10 @@ const AboutMeComponent = () => {
             </div>
           </div>
           {/* Grid 3 */}
-          <div className="flex items-end p-6 bg-gradient-to-tl from-black to-neutral-800 rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
+          <div className="flex items-end p-6 bg-gradient-to-tl from-black to-neutral-800 rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div className="z-10 w-[50%] h-full">
-              <p className="mt-2 mb-2 text-2xl uppercase text-[#FF9EAD]">
-                Time Zome
+              <p className="mt-2 mb-2 text-2xl uppercase text-primary">
+                Time Zone
               </p>
               <p className="leading-[18px] text-neutral-500 font-extralight uppercase">
                 I'm based in Bangkok, Thailand, and open to onsite, remote, and
@@ -155,15 +159,31 @@ const AboutMeComponent = () => {
             </figure>
           </div>
           {/* Grid 4 */}
-          <div className="flex items-end p-6 bg-gradient-to-bl from-[#FF9EAD] to-[#fa6c81] rounded-2xl row-span-1 md:col-span-2 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200">
+          <div className="flex items-end p-6 bg-gradient-to-bl from-primary to-[#fa6c81] rounded-2xl row-span-1 md:col-span-2 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div className="flex flex-col items-center justify-center gap-4 size-full">
-              <p className="text-center text-2xl uppercase text-[#F5DCE0] ">
-                Curious to know more about me?
+              <p className="text-center text-2xl uppercase text-neutral-900">
+                Curious to know more about me ?
               </p>
+              <CopyCvButton />
             </div>
           </div>
           {/* Grid 5 */}
-          <div className="flex items-end p-6 bg-gradient-to-br from-neutral-800 to-black rounded-2xl row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200"></div>
+          <div className="flex items-end p-6 bg-gradient-to-br from-neutral-800 to-black rounded-2xl row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
+            <div className="z-10 w-[50%] h-full">
+              <p className="mt-2 mb-2 text-2xl uppercase text-primary">
+                Teck Stack
+              </p>
+              <p className="leading-[18px] text-neutral-500 font-extralight uppercase max-[426px]:text-sm max-[376px]:text-[12px] max-[321px]:text-[11px]">
+                I have had the opportunity to work with various programming
+                languages, frameworks, and tools through past projects, which
+                have helped me learn how to build well-structured and practical
+                applications. I continue to grow and improve myself endlessly.
+              </p>
+            </div>
+            <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
+              <FrameWorks />
+            </div>
+          </div>
         </div>
       </div>
     </div>

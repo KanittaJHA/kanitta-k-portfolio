@@ -5,7 +5,7 @@ import AboutMeComponent from "../components/02-about-me/AboutMeComponent";
 
 const AboutMe = () => {
   useEffect(() => {
-    document.title = "SPACEJI | ABOUT ME";
+    document.title = "SpaceJi | About Me";
   }, []);
 
   return (

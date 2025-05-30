@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer";
 
 const Projects = () => {
   useEffect(() => {
-    document.title = "SPACEJI | PROJECTS";
+    document.title = "SpaceJi | Projects";
   }, []);
 
   return (
