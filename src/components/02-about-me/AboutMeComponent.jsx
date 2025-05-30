@@ -5,7 +5,7 @@ import TypewriterText from "../TypewriterText";
 import Card from "./Card";
 import { Globe } from "./Globe";
 import CopyCvButton from "./CopyCvButton";
-import { FrameWorks } from "./FrameWorks";
+import { Frameworks } from "./Frameworks";
 
 const AboutMeComponent = () => {
   const grid2Container = useRef();
@@ -180,7 +180,7 @@ const AboutMeComponent = () => {
               </p>
             </div>
             <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
-              <FrameWorks />
+              <Frameworks />
             </div>
           </div>
         </div>
