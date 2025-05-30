@@ -26,7 +26,6 @@ const AboutMeComponent = () => {
           </span>
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
-          {/* Grid 1 */}
           <div className="flex items-end p-6 bg-gradient-to-b from-black to-neutral-800 rounded-2xl row-span-2 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden cursor-pointer group transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <img
               src={CodingPovImage}
@@ -48,7 +47,7 @@ const AboutMeComponent = () => {
             </div>
             <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-black"></div>
           </div>
-          {/* Grid 2 */}
+
           <div className="flex items-end p-6 bg-gradient-to-tr from-neutral-800 to-black rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div
               ref={grid2Container}
@@ -143,7 +142,7 @@ const AboutMeComponent = () => {
               />
             </div>
           </div>
-          {/* Grid 3 */}
+
           <div className="flex items-end p-6 bg-gradient-to-tl from-black to-neutral-800 rounded-2xl row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div className="z-10 w-[50%] h-full">
               <p className="mt-2 mb-2 text-2xl uppercase text-primary">
@@ -158,7 +157,7 @@ const AboutMeComponent = () => {
               <Globe />
             </figure>
           </div>
-          {/* Grid 4 */}
+
           <div className="flex items-end p-6 bg-gradient-to-bl from-primary to-[#fa6c81] rounded-2xl row-span-1 md:col-span-2 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div className="flex flex-col items-center justify-center gap-4 size-full">
               <p className="text-center text-2xl uppercase text-neutral-900">
@@ -167,7 +166,7 @@ const AboutMeComponent = () => {
               <CopyCvButton />
             </div>
           </div>
-          {/* Grid 5 */}
+
           <div className="flex items-end p-6 bg-gradient-to-br from-neutral-800 to-black rounded-2xl row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div className="z-10 w-[50%] h-full">
               <p className="mt-2 mb-2 text-2xl uppercase text-primary">
