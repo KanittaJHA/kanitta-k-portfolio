@@ -8,7 +8,7 @@ import styles from "./Header.module.css";
 const menuLinks = [
   { text: "Home.", path: "/home", type: "route" },
   { text: "About Me.", path: "/about-me", type: "route" },
-  { text: "Contact Us.", path: "#contact", type: "scroll" },
+  { text: "Contact Me.", path: "#contact", type: "scroll" },
 ];
 const projectsLink = { text: "Projects.", path: "/projects", type: "route" };
 
