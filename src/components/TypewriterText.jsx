@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const TypewriterText = ({ text, speed = 200 }) => {
+const TypewriterText = ({ text, speed = 200, onComplete }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
@@ -13,13 +13,14 @@ const TypewriterText = ({ text, speed = 200 }) => {
         setDisplayedText((prev) => prev + text[index]);
         setIndex(index + 1);
       } else {
-        setDisplayedText("");
-        setIndex(0);
+        if (onComplete) {
+          onComplete();
+        }
       }
     }, speed);
 
     return () => clearTimeout(timeout);
-  }, [index, isPlaying, speed, text]);
+  }, [index, isPlaying, speed, text, onComplete]);
 
   const handleMouseEnter = () => {
     setIsPlaying(false);

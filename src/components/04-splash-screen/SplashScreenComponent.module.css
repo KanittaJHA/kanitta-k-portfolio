@@ -1,0 +1,42 @@
+.loadingCircle {
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 2s ease-out, opacity 2s ease-out;
+}
+
+.circleZoomIn {
+    transform: scale(3);
+    opacity: 100;
+}
+
+.triangleOrbiter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+    animation-play-state: paused;
+}
+
+.triangleIcon {
+    position: absolute;
+    top: calc(500px - 12px);
+    left: 50%;
+    transform: translateX(-50%) rotate(92deg);
+    transform-origin: center center;
+}
+
+@keyframes orbitTriangle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-198deg);
+    }
+}
+
+.triangleAnimation {
+    animation: orbitTriangle 4s ease-out forwards;
+}
