@@ -37,7 +37,11 @@ const ExploreMySpace = () => {
               <br />
               <span className="text-[2.5rem] max-[901px]:text-[1.8rem] max-[801px]:text-[1.6rem] max-[721px]:text-[1.3rem]">
                 [
-                <TypewriterText text=" discover my future ]" speed={200} />
+                <TypewriterText
+                  text=" discover my future ]"
+                  speed={200}
+                  loop={true}
+                />
               </span>
             </h2>
           </div>

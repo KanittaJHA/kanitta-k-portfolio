@@ -7,7 +7,7 @@ import styles from "./Header.module.css";
 
 const menuLinks = [
   { text: "Projects.", path: "/projects", type: "route" },
-  { text: "Home.", path: "/", type: "route" },
+  { text: "Home.", path: "/home", type: "route" },
   { text: "About Me.", path: "/about-me", type: "route" },
   { text: "Contact Us.", path: "#contact", type: "scroll" },
 ];
@@ -67,7 +67,6 @@ const Navbar = () => {
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
-      behavior: "smooth",
     });
   };
 
@@ -82,7 +81,7 @@ const Navbar = () => {
         <div className="max-w-[1440px] mx-auto flex items-center justify-between px-[64px] py-7 max-[701px]:px-[32px] max-[701px]:py-5">
           <div className="flex items-center">
             <Link
-              to="/"
+              to="/home"
               onClick={() => {
                 scrollToTop();
               }}
@@ -212,7 +211,7 @@ const Navbar = () => {
               handleMenuToggle();
             }}
           >
-            <TypewriterText text="[ PROJECTS ]" speed={200} />
+            <TypewriterText text="[ PROJECTS ]" speed={200} loop={true} />
           </Link>
         </div>
 

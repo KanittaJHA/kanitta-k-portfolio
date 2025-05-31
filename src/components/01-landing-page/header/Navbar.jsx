@@ -6,7 +6,7 @@ import { RiCloseFill, RiApps2AiFill } from "react-icons/ri";
 import styles from "./Header.module.css";
 
 const menuLinks = [
-  { text: "Home.", path: "/", type: "route" },
+  { text: "Home.", path: "/home", type: "route" },
   { text: "About Me.", path: "/about-me", type: "route" },
   { text: "Contact Us.", path: "#contact", type: "scroll" },
 ];
@@ -69,14 +69,12 @@ const Navbar = () => {
     setIsScrollLinkExplicitlyActive(false);
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   };
 
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.body.scrollHeight,
-      behavior: "smooth",
     });
   };
 
@@ -91,7 +89,7 @@ const Navbar = () => {
         style={{ boxShadow: isScrolled ? "0 2px 4px rgba(0,0,0,0.1)" : "none" }}
       >
         <div>
-          <Link to="/" onClick={scrollToTop}>
+          <Link to="/home" onClick={scrollToTop}>
             {" "}
             <img src={logo} alt="SPACEJI logo" className="w-[100px]" />
           </Link>
@@ -120,7 +118,7 @@ const Navbar = () => {
                   ${currentActiveItem === projectsLink.path ? "pl-4" : ""}
                 `}
               >
-                <TypewriterText text="[ PROJECTS ]" speed={200} />
+                <TypewriterText text="[ PROJECTS ]" speed={200} loop={true} />
               </span>
             </Link>
           </div>
@@ -263,7 +261,7 @@ const Navbar = () => {
                 ${currentActiveItem === projectsLink.path ? "pl-4" : ""}
               `}
             >
-              <TypewriterText text="[ PROJECTS ]" speed={200} />
+              <TypewriterText text="[ PROJECTS ]" speed={200} loop={true} />
             </span>
           </Link>
         </div>

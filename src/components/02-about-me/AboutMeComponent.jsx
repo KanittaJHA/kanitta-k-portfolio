@@ -22,7 +22,11 @@ const AboutMeComponent = () => {
 
           <span className="text-secondary text-[2.5rem] max-[901px]:text-[1.8rem] max-[801px]:text-[1.6rem] max-[721px]:text-[1.3rem] uppercase">
             [
-            <TypewriterText text=" Hi, I'm Kanitta Ket-in ]" speed={200} />
+            <TypewriterText
+              text=" Hi, I'm Kanitta Ket-in ]"
+              speed={200}
+              loop={true}
+            />
           </span>
         </div>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">

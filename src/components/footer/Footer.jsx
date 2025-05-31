@@ -39,7 +39,7 @@ const Footer = () => {
     <footer className="relative z-20 w-full h-[410px] max-[621px]:h-[450px] max-w-[1440px] mx-auto px-[64px] flex flex-col max-[701px]:px-[32px]">
       <div className="grid grid-cols-2 max-[621px]:grid-cols-1">
         <div className="flex flex-col gap-8 w-full">
-          <Link to="/" onClick={scrollToTop}>
+          <Link to="/home" onClick={scrollToTop}>
             <img className="w-[130px]" src={FooterImage} alt="Footer Logo" />
           </Link>
 
@@ -84,7 +84,7 @@ const Footer = () => {
         <div className="w-full relative">
           <div className="absolute flex items-center gap-6 right-0 max-[621px]:w-full max-[621px]:flex-col max-[621px]:items-start max-[621px]:gap-2 max-[621px]:mt-8">
             <p className="uppercase text-[#FF9EAD] text-[20px]">
-              [ <TypewriterText text=" follow me ]" speed={200} />
+              [ <TypewriterText text=" follow me ]" speed={200} loop={true} />
             </p>
 
             <div className="text-[#F5DCE0] flex items-center gap-5 text-[24px]">

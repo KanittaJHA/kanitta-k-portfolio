@@ -1,5 +1,9 @@
 import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate,
+} from "react-router-dom";
 import "./index.css";
 import Layout from "../src/components/Layout";
 import Home from "./pages/Home";
@@ -13,13 +17,16 @@ const router = createBrowserRouter([
     element: <SplashScreen />,
   },
   {
-    path: "/home",
     element: <Layout />,
     children: [
-      { index: true, element: <Home /> },
-      { path: "about-me", element: <AboutMe /> },
-      { path: "projects", element: <Projects /> },
+      { path: "/home", element: <Home /> },
+      { path: "/about-me", element: <AboutMe /> },
+      { path: "/projects", element: <Projects /> },
     ],
+  },
+  {
+    path: "*",
+    element: <Navigate to="/" replace />,
   },
 ]);
 
