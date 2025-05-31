@@ -82,7 +82,7 @@ const SplashScreenComponent = ({ onZoomFinished }) => {
           <div
             className={`${
               styles.loadingCircle
-            } w-[1000px] h-[1000px] bg-black/60 rounded-full shadow-[1px_1px_160px_0_rgba(207,244,255,0.25)] flex items-center justify-center p-40 max-[1025px]:p-25 max-[966px]:p-18 max-[821px]:p-16 max-[601px]:p-11 max-[411px]:p-10 ${
+            } w-[1000px] h-[1000px] bg-black/60 rounded-full shadow-[1px_1px_160px_0_rgba(207,244,255,0.25)] flex items-center justify-center p-40 max-[1025px]:p-25 max-[966px]:p-18 max-[821px]:p-16 max-[601px]:p-11 max-[411px]:p-7 ${
               startCircleZoom ? styles.circleZoomIn : ""
             }`}
           >
@@ -91,7 +91,7 @@ const SplashScreenComponent = ({ onZoomFinished }) => {
                 hideContent ? "opacity-0" : "opacity-100"
               }`}
             >
-              <ul className="text-secondary max-[770px]:text-sm max-[411px]:text-[12px] max-[411px]:leading-[15px] max-[411px]:px-3 z-10 border-2 border-neutral-700 rounded-tl-[20px] rounded-br-[20px] w-[300px] h-[170px] px-5 leading-[20px] flex flex-col max-[770px]:w-[260px] max-[770px]:h-[170px] max-[710px]:w-[220px] max-[411px]:h-[135px] max-[411px]:w-[180px]">
+              <ul className="text-secondary max-[770px]:text-sm max-[411px]:text-[12px] max-[411px]:leading-[15px] max-[411px]:px-3 z-10 border-2 border-neutral-700 rounded-tl-[20px] rounded-br-[20px] w-[300px] h-[170px] px-5 leading-[20px] flex flex-col max-[770px]:w-[260px] max-[770px]:h-[170px] max-[710px]:w-[220px] max-[411px]:h-[135px] max-[411px]:w-[200px]">
                 <li className="w-full flex items-center justify-end mb-1 mt-3">
                   <RiApps2AiFill className="text-primary" />
                 </li>
