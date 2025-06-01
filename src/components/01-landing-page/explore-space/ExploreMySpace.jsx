@@ -9,7 +9,6 @@ const ExploreMySpace = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   };
 
@@ -31,7 +30,7 @@ const ExploreMySpace = () => {
 
       <div className="flex relative top-[-150px] max-[901px]:top-[-135px] max-[681px]:top-[-60px] mt-6">
         <div className="flex flex-col justify-center max-[681px]:items-center">
-          <div className="uppercase text-[#FF9EAD] max-[681px]:text-center">
+          <div className="uppercase text-primary max-[681px]:text-center">
             <h2 className="text-[3.5rem] leading-[3rem] max-[913px]:text-[3.3rem] max-[901px]:text-[2.8rem] max-[801px]:text-[2.6rem] max-[781px]:text-[2.3rem] max-[721px]:text-[2.2rem] max-[601px]:text-[1.65rem] max-[901px]:leading-[2.5rem] max-[781px]:leading-[2.2rem] max-[721px]:leading-[2rem]">
               Explore My space
               <br />
@@ -46,7 +45,7 @@ const ExploreMySpace = () => {
             </h2>
           </div>
 
-          <p className="uppercase text-[#F5DCE0] max-[681px]:text-center w-[60%] max-[795px]:w-[72%] max-[721px]:w-[80%] max-[681px]:w-[100%] text-[18px] max-[901px]:text-[16px] max-[721px]:text-[14px] max-[601px]:text-[12px] font-extralight mt-16 max-[901px]:mt-7 max-[721px]:mt-6 max-[681px]:mt-4">
+          <p className="uppercase text-secondary max-[681px]:text-center w-[60%] max-[795px]:w-[72%] max-[721px]:w-[80%] max-[681px]:w-[100%] text-[18px] max-[901px]:text-[16px] max-[721px]:text-[14px] max-[601px]:text-[12px] font-extralight mt-16 max-[901px]:mt-7 max-[721px]:mt-6 max-[681px]:mt-4">
             believe that when technology is shaped with heart and empathy, it
             can change the world one small step at a time through software that
             truly cares about people and solves real problems. If you’d like to

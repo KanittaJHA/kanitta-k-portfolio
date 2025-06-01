@@ -28,7 +28,7 @@
     left: 50%;
     width: 15px;
     height: 15px;
-    background-color: #FF9EAD;
+    background-color: var(--color-primary);
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
     transform: translateX(-50%);

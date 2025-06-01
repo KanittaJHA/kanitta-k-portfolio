@@ -26,7 +26,7 @@ const ScrollToTopButton = () => {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-[1000] p-1 rounded-full bg-[#F5DCE0] text-[#FF9EAD] shadow-lg cursor-pointer transition-opacity duration-300 ease-in-out hover:scale-110 active:scale-90"
+          className="fixed bottom-8 right-8 z-[1000] p-1 rounded-full bg-secondary text-primary shadow-lg cursor-pointer transition-opacity duration-300 ease-in-out hover:scale-110 active:scale-90"
           aria-label="Scroll to top"
         >
           <RiArrowUpCircleFill className="text-4xl" />

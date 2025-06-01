@@ -66,13 +66,13 @@ const Bsms = () => {
               key={index}
               className="relative w-[310px] mt-8 mb-[1px]"
             >
-              <div className="absolute top-0 left-0 flex items-center w-[310px] text-[#F5DCE0] uppercase font-extralight text-xl max-[601px]:text-[16px] border border-gray-600 px-3 py-2 rounded-[16px] bg-gray-500/10 hover:-rotate-6 origin-bottom-left transition-transform duration-200 cursor-pointer z-10">
+              <div className="absolute top-0 left-0 flex items-center w-[310px] text-secondary uppercase font-extralight text-xl max-[601px]:text-[16px] border border-gray-600 px-3 py-2 rounded-[16px] bg-gray-500/10 hover:-rotate-6 origin-bottom-left transition-transform duration-200 cursor-pointer z-10">
                 {item.icon}
                 <div className="flex flex-col ml-2">
                   <p>{item.title}</p>
                   <p className="text-[12px]">{item.desc}</p>
                 </div>
-                <div className="bg-gray-800 rounded-full w-[25px] h-[25px] absolute right-4 flex items-center justify-center cursor-pointer hover:text-white hover:bg-[#FF9EAD] transition-all duration-100 ease-in">
+                <div className="bg-gray-800 rounded-full w-[25px] h-[25px] absolute right-4 flex items-center justify-center cursor-pointer hover:text-white hover:bg-primary transition-all duration-100 ease-in">
                   <RiArrowRightSLine className="text-white" />
                 </div>
               </div>

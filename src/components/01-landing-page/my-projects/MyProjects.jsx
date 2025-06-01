@@ -30,13 +30,13 @@ const MyProjects = () => {
         ].map((project, index) => (
           <React.Fragment key={index}>
             <div
-              className="text-gray-600 flex justify-center w-full h-[75px] max-[821px]:h-[57px] uppercase cursor-pointer hover:text-[#FF9EAD] ease-in-out transition-all duration-400"
+              className="text-gray-600 flex justify-center w-full h-[75px] max-[821px]:h-[57px] uppercase cursor-pointer hover:text-primary ease-in-out transition-all duration-400"
               onClick={() => handleProjectClick(project)}
             >
               <div className="ml-2 max-[821px]:text-[14px]">
                 <p>{String(index + 1).padStart(2, "0")}.</p>
               </div>
-              <div className="relative flex items-center w-full justify-center text-[20px] max-[821px]:text-[16px] hover:text-[40px] max-[821px]:hover:text-[24px] hover:text-[#FF9EAD]">
+              <div className="relative flex items-center w-full justify-center text-[20px] max-[821px]:text-[16px] hover:text-[40px] max-[821px]:hover:text-[24px] hover:text-primary">
                 <p>{project}</p>
                 <RiArrowRightDoubleLine className="absolute right-0" />
               </div>

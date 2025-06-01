@@ -26,7 +26,7 @@ const iconLinks = [
 ];
 
 const iconStyle =
-  "cursor-pointer hover:text-[#FF9EAD] hover:scale-110 transition-all duration-300 ease-in-out";
+  "cursor-pointer hover:text-primary hover:scale-110 transition-all duration-300 ease-in-out";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -43,7 +43,7 @@ const Footer = () => {
             <img className="w-[130px]" src={FooterImage} alt="Footer Logo" />
           </Link>
 
-          <p className="text-[#F5DCE0] font-extralight uppercase w-[85%] max-[901px]:w-[100%] max-[769px]:text-[14px]">
+          <p className="text-secondary font-extralight uppercase w-[85%] max-[901px]:w-[100%] max-[769px]:text-sm max-[601px]:text-[12px]">
             Thank you so much for visiting my website. I truly appreciate you
             taking the time to explore my journey, my work, and the passion
             behind it all. Every project and every line of code here reflects my
@@ -55,16 +55,16 @@ const Footer = () => {
           <div>
             <div className="relative w-[85%] max-[901px]:w-[100%]">
               <input
-                className="bg-[#F5DCE0] w-full pr-[130px] py-3 px-3 pl-6 rounded-full uppercase border-none outline-none max-[769px]:text-[14px]"
+                className="bg-secondary w-full pr-[130px] py-3 px-3 pl-6 rounded-full uppercase border-none outline-none max-[769px]:text-sm max-[601px]:text-[12px]"
                 type="text"
                 placeholder="Enter your email"
               />
-              <button className="absolute top-1/2 right-[4px] -translate-y-1/2 bg-[#FF9EAD] text-white px-10 py-2 max-[769px]:px-6 max-[769px]:text-[14px] rounded-full uppercase cursor-pointer hover:bg-black transition-all duration-300 ease-in-out">
+              <button className="absolute top-1/2 right-[4px] -translate-y-1/2 bg-primary text-white px-10 py-2 max-[769px]:px-6 max-[769px]:text-[14px] rounded-full uppercase cursor-pointer hover:bg-black transition-all duration-300 ease-in-out">
                 Subscribe
               </button>
             </div>
 
-            <div className="flex gap-6 text-[#F5DCE0] mt-3 max-[769px]:text-[14px] max-[325px]:text-[12px] leading-0">
+            <div className="flex gap-6 text-secondary mt-3 max-[769px]:text-sm max-[601px]:text-[12px] leading-0">
               {[
                 { icon: <RiPhoneFill />, text: "+66 925801172" },
                 { icon: <RiMailFill />, text: "KANITTAKETIN@GMAIL.COM" },
@@ -83,11 +83,11 @@ const Footer = () => {
 
         <div className="w-full relative">
           <div className="absolute flex items-center gap-6 right-0 max-[621px]:w-full max-[621px]:flex-col max-[621px]:items-start max-[621px]:gap-2 max-[621px]:mt-8">
-            <p className="uppercase text-[#FF9EAD] text-[20px]">
+            <p className="uppercase text-primary text-[20px]">
               [ <TypewriterText text=" follow me ]" speed={200} loop={true} />
             </p>
 
-            <div className="text-[#F5DCE0] flex items-center gap-5 text-[24px]">
+            <div className="text-secondary flex items-center gap-5 text-[24px]">
               {iconLinks.map((link, i) => {
                 const IconComponent = link.Icon;
                 return (
@@ -107,7 +107,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="text-[#F5DCE0] text-center mt-20 uppercase font-extralight max-[621px]:mt-32 max-[1025px]:mt-15">
+      <p className="text-secondary text-center mt-20 uppercase font-extralight max-[621px]:mt-[150px] max-[1025px]:mt-15 max-[769px]:text-sm max-[601px]:text-[12px]">
         © 2025 kanitta ket-in. All Rights Reserved
       </p>
 

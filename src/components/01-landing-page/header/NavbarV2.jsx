@@ -114,7 +114,7 @@ const Navbar = () => {
                         className="flex items-center"
                       >
                         <span
-                          className={`absolute left-0 top-0 text-[#FF9EAD] w-4 inline-block transition-opacity duration-300
+                          className={`absolute left-0 top-0 text-primary w-4 inline-block transition-opacity duration-300
                             ${
                               isActive
                                 ? "opacity-100"
@@ -128,8 +128,8 @@ const Navbar = () => {
                           className={`transition-all duration-300 uppercase
                             ${
                               isActive
-                                ? "pl-4 text-[#FF9EAD]"
-                                : "group-hover:pl-4 text-gray-500 group-hover:text-[#FF9EAD]"
+                                ? "pl-4 text-primary"
+                                : "group-hover:pl-4 text-gray-500 group-hover:text-primary"
                             }
                           `}
                         >
@@ -142,7 +142,7 @@ const Navbar = () => {
                         className="flex items-center"
                       >
                         <span
-                          className={`absolute left-0 top-0 text-[#FF9EAD] opacity-0 w-4 inline-block transition-opacity duration-300
+                          className={`absolute left-0 top-0 text-primary opacity-0 w-4 inline-block transition-opacity duration-300
                             ${
                               isActive
                                 ? "opacity-100"
@@ -156,8 +156,8 @@ const Navbar = () => {
                           className={`transition-all duration-300 uppercase
                             ${
                               isActive
-                                ? "pl-4 text-[#FF9EAD]"
-                                : "group-hover:pl-4 text-gray-500 group-hover:text-[#FF9EAD]"
+                                ? "pl-4 text-primary"
+                                : "group-hover:pl-4 text-gray-500 group-hover:text-primary"
                             }
                           `}
                         >
@@ -171,7 +171,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="text-[#FF9EAD] min-[701px]:hidden h-[24px]">
+          <div className="text-primary min-[701px]:hidden h-[24px]">
             <button
               onClick={handleMenuToggle}
               className={`transition-transform duration-300 ease-in-out ${
@@ -191,7 +191,7 @@ const Navbar = () => {
       >
         <button
           onClick={handleMenuToggle}
-          className={`absolute top-4 left-8 text-[#FF9EAD] text-[28px] transition-transform duration-300 ease-in-out ${
+          className={`absolute top-4 left-8 text-primary text-[28px] transition-transform duration-300 ease-in-out ${
             isAnimating ? "rotate-180" : ""
           }`}
         >
@@ -203,7 +203,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="font-semibold text-[20px] text-[#FF9EAD] cursor-pointer mb-4 leading-[1.2] h-[28px] min-w-[104px] text-center">
+        <div className="font-semibold text-[20px] text-primary cursor-pointer mb-4 leading-[1.2] h-[28px] min-w-[104px] text-center">
           <Link
             to="/projects"
             onClick={() => {
@@ -241,7 +241,7 @@ const Navbar = () => {
                       className="flex items-center"
                     >
                       <span
-                        className={`absolute left-[-20px] text-[#FF9EAD] transition-opacity duration-300
+                        className={`absolute left-[-20px] text-primary transition-opacity duration-300
                           ${
                             isActive
                               ? "opacity-100"
@@ -255,8 +255,8 @@ const Navbar = () => {
                         className={`uppercase transition-all duration-300
                           ${
                             isActive
-                              ? "pl-4 text-[#FF9EAD]"
-                              : "group-hover:pl-4 text-gray-500 group-hover:text-[#FF9EAD]"
+                              ? "pl-4 text-primary"
+                              : "group-hover:pl-4 text-gray-500 group-hover:text-primary"
                           }
                         `}
                       >
@@ -272,7 +272,7 @@ const Navbar = () => {
                       className="flex items-center"
                     >
                       <span
-                        className={`absolute left-[-20px] text-[#FF9EAD] opacity-0 transition-opacity duration-300
+                        className={`absolute left-[-20px] text-primary opacity-0 transition-opacity duration-300
                           ${
                             isActive
                               ? "opacity-100"
@@ -286,8 +286,8 @@ const Navbar = () => {
                         className={`uppercase transition-all duration-300
                           ${
                             isActive
-                              ? "pl-4 text-[#FF9EAD]"
-                              : "group-hover:pl-4 text-gray-500 group-hover:text-[#FF9EAD]"
+                              ? "pl-4 text-primary"
+                              : "group-hover:pl-4 text-gray-500 group-hover:text-primary"
                           }
                         `}
                       >

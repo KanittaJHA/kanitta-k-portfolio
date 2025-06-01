@@ -76,10 +76,10 @@ const ProjectsComponent = () => {
       <NavbarV2 />
 
       <div className="flex flex-col w-full justify-center items-center">
-        <h2 className="text-[#FF9EAD] text-6xl uppercase mt-[140px] text-center max-[769px]:text-5xl max-[401px]:text-[38px]">
+        <h2 className="text-primary text-6xl uppercase mt-[140px] text-center max-[769px]:text-5xl max-[401px]:text-[38px]">
           {headingText}
         </h2>
-        <p className="text-[#F5DCE0] text-[20px] uppercase font-light w-[50%] text-center max-[1025px]:w-[70%] max-[769px]:w-[80%] max-[601px]:w-[100%] max-[769px]:text-[16px] max-[401px]:text-[14px]">
+        <p className="text-secondary text-[20px] uppercase font-light w-[50%] text-center max-[1025px]:w-[70%] max-[769px]:w-[80%] max-[601px]:w-[100%] max-[769px]:text-[16px] max-[401px]:text-[14px]">
           Dive into an interstellar voyage of design and development, where
           creativity fuels rockets and every project tells a story written among
           the stars.
@@ -87,7 +87,7 @@ const ProjectsComponent = () => {
       </div>
 
       <div className="mt-16">
-        <ul className="flex flex-wrap items-center w-full justify-center gap-6 text-[#F5DCE0] uppercase text-sm max-[426px]:text-[12px] max-[601px]:gap-4">
+        <ul className="flex flex-wrap items-center w-full justify-center gap-6 text-secondary uppercase text-sm max-[426px]:text-[12px] max-[601px]:gap-4">
           {[
             "All Projects",
             "E-commerce",
@@ -103,8 +103,8 @@ const ProjectsComponent = () => {
               className={`flex items-center px-6 py-1.5 rounded-full transition-all duration-300 ease-in-out cursor-pointer
                 ${
                   activeCategory.toLowerCase() === item.toLowerCase()
-                    ? "bg-[#FF9EAD] text-white"
-                    : "bg-[#F5DCE0] text-gray-900 hover:bg-[#FF9EAD] hover:text-white"
+                    ? "bg-primary text-white"
+                    : "bg-secondary text-gray-900 hover:bg-primary hover:text-white"
                 }`}
             >
               <p>{item}</p>
@@ -117,7 +117,7 @@ const ProjectsComponent = () => {
         {filteredProjects.map((project) => (
           <div
             key={project.id}
-            className="w-full bg-neutral-950/80 rounded-[16px] p-5 hover:bg-[#FF9EAD] hover:text-gray-900 transition-all duration-200 ease-in-out cursor-pointer group"
+            className="w-full bg-neutral-950/80 rounded-[16px] p-5 hover:bg-primary hover:text-gray-900 transition-all duration-200 ease-in-out cursor-pointer group"
           >
             <div className="flex justify-between items-center mb-4 h-[18px]">
               <p className="text-white uppercase text-sm">{project.category}</p>
@@ -126,7 +126,7 @@ const ProjectsComponent = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <RiGithubFill className="text-[18px] text-white cursor-pointer" />
+                <RiGithubFill className="text-[20px] text-white cursor-pointer" />
               </a>
             </div>
             <a
