@@ -308,24 +308,6 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 21,
-    category: "Full Stack Projects",
-    title: "CalNoy",
-    githubUrl:
-      "https://github.com/KanittaJHA/jsd9-catsudon-frontend-group-project.git",
-    deployUrl: "https://jsd9-catsudon-frontend.vercel.app/",
-    image:
-      "https://res.cloudinary.com/dvhhq4hhh/image/upload/v1748357491/calnoy_hxyaof.png",
-    icons: [
-      "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
-      "https://www.manektech.com/storage/developer/1646733543.webp",
-      "https://img.icons8.com/?size=100&id=asWSSTBrDlTW&format=png&color=000000",
-      "https://cdn-icons-png.flaticon.com/256/5968/5968322.png",
-      "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
-      "https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000",
-    ],
-  },
-  {
     id: 22,
     category: "Full Stack Projects",
     title: "PlanAhead",
