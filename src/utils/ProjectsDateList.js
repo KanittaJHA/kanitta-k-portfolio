@@ -119,6 +119,20 @@ const ProjectsDateList = [
   },
   {
     id: 9,
+    category: "Business",
+    title: "MotoRush",
+    githubUrl: "https://github.com/KanittaJHA/motorush-landing-page.git",
+    deployUrl: "https://motorush-landing-page-sand.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dvhhq4hhh/image/upload/v1752752651/motorush_dascvz.png",
+    icons: [
+      "https://img.icons8.com/?size=100&id=20909&format=png&color=000000",
+      "https://img.icons8.com/?size=100&id=21278&format=png&color=000000",
+      "https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png",
+    ],
+  },
+  {
+    id: 10,
     category: "Mini Projects",
     title: "Gradient Color Generator",
     githubUrl: "https://github.com/KanittaJHA/gradient-color-generator.git",
@@ -132,7 +146,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 10,
+    id: 11,
     category: "Mini Projects",
     title: "Ai Image Generator",
     githubUrl:
@@ -148,7 +162,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 11,
+    id: 12,
     category: "Mini Projects",
     title: "ChatJee Chatbot",
     githubUrl:
@@ -163,7 +177,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     category: "Mini Projects",
     title: "Google Gemini Clone",
     githubUrl: "https://github.com/KanittaJHA/google-gemini-chatbot-clone.git",
@@ -177,7 +191,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     category: "Mini Projects",
     title: "Card Slider Job Position",
     githubUrl: "https://github.com/KanittaJHA/card-slider-job-positions.git",
@@ -191,7 +205,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 14,
+    id: 15,
     category: "Dashboards",
     title: "Admin Dashboard",
     githubUrl: "https://github.com/KanittaJHA/admin-dashboard.git",
@@ -205,7 +219,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 15,
+    id: 16,
     category: "Animations and Games",
     title: "Merry Christmas",
     githubUrl: "https://github.com/KanittaJHA/merry-christmas-landing-page.git",
@@ -219,7 +233,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 16,
+    id: 17,
     category: "Animations and Games",
     title: "Legend of The seas",
     githubUrl: "https://github.com/KanittaJHA/legend-of-the-seas-v2.git",
@@ -233,7 +247,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 17,
+    id: 18,
     category: "Animations and Games",
     title: "Temple Sakura",
     githubUrl: "https://github.com/KanittaJHA/temple-sakura-landing-page.git",
@@ -247,7 +261,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 18,
+    id: 19,
     category: "Animations and Games",
     title: "GreenBee 3D-Animation",
     githubUrl:
@@ -262,7 +276,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 19,
+    id: 20,
     category: "Animations and Games",
     title: "Duck Hunt",
     githubUrl: "https://github.com/KanittaJHA/duck-hunt-game.git",
@@ -276,7 +290,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 20,
+    id: 21,
     category: "Animations and Games",
     title: "Word Scramble",
     githubUrl: "https://github.com/KanittaJHA/word-scramble-game.git",
@@ -290,7 +304,7 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 21,
+    id: 22,
     category: "Full Stack Projects",
     title: "CalNoy",
     githubUrl:
@@ -308,14 +322,14 @@ const ProjectsDateList = [
     ],
   },
   {
-    id: 22,
+    id: 23,
     category: "Full Stack Projects",
     title: "PlanAhead",
     githubUrl:
       "https://github.com/KanittaJHA/planahead-task-manager-frontend.git",
     deployUrl: "https://planahead-task-manager-frontend.vercel.app/",
     image:
-      "https://res.cloudinary.com/dvhhq4hhh/image/upload/v1752750044/%E0%B8%AA%E0%B8%81%E0%B8%A3%E0%B8%B5%E0%B8%99%E0%B8%8A%E0%B9%87%E0%B8%AD%E0%B8%95_2025-07-17_175655_ys1kcj.png",
+      "https://res.cloudinary.com/dvhhq4hhh/image/upload/v1752752642/planahead_hxgc4y.png",
     icons: [
       "https://img.icons8.com/?size=100&id=74402&format=png&color=000000",
       "https://www.manektech.com/storage/developer/1646733543.webp",
