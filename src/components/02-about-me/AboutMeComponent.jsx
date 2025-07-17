@@ -174,7 +174,7 @@ const AboutMeComponent = () => {
           <div className="flex items-end p-6 bg-gradient-to-br from-neutral-800 to-black rounded-2xl row-span-1 md:col-span-4 h-[15rem] md:h-full relative overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:scale-[1.01]">
             <div className="z-10 w-[50%] h-full">
               <p className="mt-2 mb-2 text-2xl uppercase text-primary">
-                Teck Stack
+                Tech Stack
               </p>
               <p className="leading-[18px] text-neutral-500 font-extralight uppercase max-[426px]:text-sm max-[376px]:text-[12px] max-[321px]:text-[11px]">
                 I have had the opportunity to work with various programming

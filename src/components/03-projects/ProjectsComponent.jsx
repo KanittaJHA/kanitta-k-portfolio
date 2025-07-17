@@ -133,7 +133,7 @@ const ProjectsComponent = () => {
               href={project.deployUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="block rounded-2xl overflow-hidden"
+              className="block rounded-xl overflow-hidden"
             >
               <img
                 src={project.image}
